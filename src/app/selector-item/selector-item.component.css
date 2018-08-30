@@ -1,0 +1,87 @@
+.wrapper {
+  border: 1px solid black;
+  overflow: hidden; /* add this to contain floated children */
+}
+
+.sub-text {
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+}
+
+.sub-text-selected {
+  background-color: #a8d7a8;
+}
+
+.item {
+  width: 48px;
+  height: 48px;
+  float:left; /* add this */
+  text-align: center;
+  line-height: 48px;
+  border-right: 1px solid black;
+  -webkit-user-select: none;
+  user-select: none
+}
+
+.sub-item {
+  width: 48px;
+  height: 16px;
+  float:left; /* add this */
+  text-align: center;
+  line-height: 16px;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  opacity: 0.5;
+  cursor: default;
+  -webkit-user-select: none;
+  user-select: none
+;
+}
+
+.title{
+  width: 92px;
+  font-size: 14px;
+  font-family: Verdana, sans-serif;
+  font-weight: normal;
+}
+
+.sub-title{
+  width: 92px;
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
+  font-weight: normal;
+}
+
+.sub-item:hover{
+  opacity: 1;
+}
+
+.breaker {
+  clear: left;
+}
+
+.possible {
+  background-color: beige;
+  color: black;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: darkseagreen;
+  color: black;
+  cursor: default;
+}
+
+.impossible {
+  background-color: gainsboro;
+  color: darkgray;
+  cursor: default;
+}
+
+.possible:hover {
+  background-color: green;
+}
+
+.impossible:hover {
+  background-color: #929490;
+}

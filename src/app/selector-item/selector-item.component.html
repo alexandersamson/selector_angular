@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div [className]="'title item'">
+    {{ selectedItem.title }}
+  </div>
+  <div
+    *ngFor="let value of selectedItem.values; let i=index" [className]="getLowestPointsAvailable() + selectedItem.costs[selectedItem.position] >= selectedItem.costs[i] ? ( selectedItem.position == i ? 'item selected' : 'item possible') : 'item impossible'"
+    (click)="clickItem(i)"
+  >
+    {{ selectedItem.values[i] }}
+  </div>
+  <div [className]="'breaker'"></div>
+  <div [className]="'sub-title sub-item'">
+    Points cost
+  </div>
+  <div *ngFor="let value of selectedItem.values; let i=index" [className]="selectedItem.position == i ? 'sub-text-selected sub-text sub-item' : 'sub-text sub-item'">
+    {{ selectedItem.costs[i] }}
+  </div>
+</div>

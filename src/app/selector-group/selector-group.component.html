@@ -1,0 +1,4 @@
+{{ selectedGroup.title }} - Points left: {{ selectedGroup.pointsAvailable }}
+<div [class]="'selector-item'" *ngFor="let selected of selectedGroup.items; let i of index">
+  <app-selector-item [selectedItem]="selected" [selectedGroup]="selectedGroup"></app-selector-item>
+</div>

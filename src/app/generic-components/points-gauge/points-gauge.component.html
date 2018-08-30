@@ -1,0 +1,11 @@
+<div [class]="'gauge-component'">
+  <div [class]="'gauge-title'">{{ gaugeTitle }}: {{ getGaugeText() }}</div>
+<div [class]="'gauge-object'">
+  <div [class]="'gauge-text before'">LESS</div>
+  <div [style.width.px]="gaugeWidth" [class]="'gauge-container'">
+    <div [style.width.px]="getGaugePosition()" [style.background-color]="getGaugeColor()" [class]="'gauge-amount'"></div>
+    <div [style.width.px]="gaugeWidth - getGaugePosition()" [class]="'gauge-remainder'"></div>
+  </div>
+  <div [class]="'gauge-text after'">MORE</div>
+</div>
+</div>

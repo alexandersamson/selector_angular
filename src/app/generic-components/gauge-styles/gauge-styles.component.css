@@ -1,0 +1,58 @@
+
+.gauge-component{
+  font-family: Verdana, sans-serif;
+  color: midnightblue;
+  width: 270px;
+  background-image: linear-gradient(#dddfda, #f2eeed);
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.gauge-title{
+  text-align: center;
+}
+
+.gauge-object{
+  overflow: hidden;
+
+}
+
+.gauge-container{
+  overflow: hidden;
+  float: left;
+  width:200px;
+  background-color: blue;
+}
+
+.gauge-amount{
+  float:left;
+  height: 15px;
+  width: 1px;
+  background-color: midnightblue;
+}
+
+.gauge-remainder{
+  float:right;
+  height: 15px;
+  width: 1px;
+  background-color: #bbb9d6;
+}
+
+.gauge-text{
+  float: left;
+  height: 15px;
+  font-size: 12px;
+}
+
+.before{
+  width:32px;
+  text-align: center;
+}
+
+.after{
+  width:35px;
+  text-align: center;
+}

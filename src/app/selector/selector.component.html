@@ -1,0 +1,7 @@
+Total points left: {{ globalsService.getPointsLeft() }}
+<div [class]="'selector-group'" *ngFor="let selected of selector.groups; let i of index">
+  <app-selector-group [selectedGroup]="selected"></app-selector-group>
+  <app-points-gauge [selectedGroup]="selected" [gaugeTitle]="'Confidence'"></app-points-gauge>
+  <app-specialist-gauge [selectedGroup]="selected" [gaugeTitle]="'Specialist'"></app-specialist-gauge>
+</div>
+
